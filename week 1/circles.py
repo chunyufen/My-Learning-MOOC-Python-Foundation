@@ -1,4 +1,5 @@
-import turtle
+# circles.py
+mport turtle
 turtle.pensize(2)
 turtle.circle(10)
 turtle.circle(40)
