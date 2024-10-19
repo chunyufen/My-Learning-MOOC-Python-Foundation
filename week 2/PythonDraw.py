@@ -1,17 +1,27 @@
-# PythonDraw.py
-import turtle # import保留字，引入了一个绘图库。名字叫做：turtle(海龟)
-turtle.setup(650,350,200,200) # -setup()设置窗体大小及位置，4个参数中后两个可选 (turtle.setup(width, height, startx, starty)); x is the width between the left side of the drawing frame and the left side of the monitor; y is the distance between the top side of the drawing frame and the top side of the monitor 
-turtle.penup() # 别名turtle.pu() 抬起画笔，海龟在飞行
-turtle.fd(-250) # formal name turtle.forward()
-turtle.pendown() # 别名turtle.pd() 落下画笔，海龟在爬行
-turtle.pensize(25) # 别名turtle.width(width) 画笔宽度，海龟的腰围
-turtle.pencolor('purple') # 画笔颜色，海龟在涂装 通过颜色字符串或r,g,b值实现
-turtle.seth(-40) # formal name turtle.setheading(angle)
-for i in range(4): # range(数字)，数字表示循环的次数
+#PythonDraw.py
+"""
+This script uses the turtle graphics module to draw a complex geometric pattern. It sets up the screen, moves the turtle to a specific starting point, and then executes a series of circle and forward movements to create a unique design. The pattern consists of alternating circles with different radii and orientations, followed by a final sequence that includes a smaller circle and a line segment. This code is an implementation detail of a graphical representation within the Python Foundation course materials.
+"""
+import turtle
+# 首先，代码通过turtle.setup(650,350,200,200)设置了绘图窗口的大小和位置，其中650和350分别是窗口的宽度和高度，而200,200是窗口左上角相对于屏幕的位置。
+turtle.setup(650,350,200,200)
+# 接着，turtle.penup()命令使乌龟抬起笔，这样它在移动时不会绘制线条。然后，turtle.fd(-250)命令让乌龟向前移动-250个单位，实际上是向后移动250个单位，这可能是为了将乌龟移动到绘图的起始位置。
+turtle.penup()
+turtle.fd(-250)
+# 之后，turtle.pendown()命令放下笔，准备开始绘制。turtle.pensize(25)设置了笔的粗细为25个单位，turtle.pencolor("purple")设置了笔的颜色为紫色。
+turtle.pendown()
+turtle.pensize(25)
+turtle.pencolor("purple")
+# turtle.seth(-40)命令设置了乌龟的初始方向为-40度（逆时针方向）。接下来的for循环执行了四次，每次循环中，乌龟先顺时针画一个半径为40，角度为80度的圆弧，然后逆时针画一个半径为40，角度为80度的圆弧。这四个圆弧组成了一个类似花瓣的图形。
+turtle.seth(-40)
+for i in range(4):
     turtle.circle(40,80)
     turtle.circle(-40,80)
+# 循环结束后，turtle.circle(40,80/2)命令让乌龟画了一个半径为40，角度为40度的圆弧，这是花瓣图形的一部分。turtle.fd(40)命令让乌龟向前移动40个单位。
 turtle.circle(40,80/2)
 turtle.fd(40)
+# 紧接着，turtle.circle(16,180)命令绘制了一个半径为16，角度为180度的半圆，这可能是花瓣图形的一部分或者是另一个独立的图形元素。
 turtle.circle(16,180)
-turtle.fd(40*2/3)
-turtle.done() # 程序运行后不会自动退出，需要手动退出
+# 最后，turtlefd(40*2/3)这行代码有一个小错误，应该是turtle.fd(40*2/3)，它让乌龟向前移动了80/3个单位。turtle.done()命令结束绘图并保持窗口打开。
+turtlefd(40*2/3)
+turtle.done()

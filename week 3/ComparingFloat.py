@@ -1,6 +1,9 @@
-# ComparingFloat.py
-print(0.1 + 0.2 == 0.3) # will give false because decimal figures are represented as binaries and are never exact amounts. therefore use "round" to judge float.
+# week 3/ComparingFloat.py
+"""
+This script demonstrates the comparison of floating-point numbers in Python, which can sometimes lead to unexpected results due to precision errors. It checks if the sum of 0.1 and 0.2 equals 0.3, which is known to be False due to floating-point arithmetic. The script also uses the round function to compare the sum rounded to one decimal place with 0.3, and prints the rounded result.
+"""
+print(0.1 + 0.2 == 0.3)
 
-print(round( 0.1 + 0.2, 1) == 3) # will give true because round(a, b) means apply 4 delete and become 5 to a, with b decimal places.
+print(round( 0.1 + 0.2, 1) == 3)
 
 print(round( 0.1 + 0.2, 1))

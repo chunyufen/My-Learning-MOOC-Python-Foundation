@@ -16,5 +16,9 @@ eval("1") = 1
 eval("1+2") = 3
 eval('"1+2"') = '1+2'
 eval('print("Hello")') = Hello
-eval(TempStr[0:-1] = 45 (float), if TempStr = 45F (str)   
+eval(TempStr[0:-1] = 45 (float), if TempStr = 45F (str)
+don't use var() even suggested by lecturer
+see https://www.udacity.com/blog/2023/03/pythons-eval-the-most-powerful-function-you-should-never-use.html
+Python’s eval(): the most powerful function you should never use.
+  
 """
