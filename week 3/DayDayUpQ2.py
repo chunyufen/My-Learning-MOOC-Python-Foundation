@@ -1,6 +1,5 @@
 # week 3/DayDayUpQ2.py
-"""
-This script calculates the compounded growth and decay over a year, given a daily factor.
+"""This script calculates the compounded growth and decay over a year, given a daily factor.
 - `dayfactor`: The daily growth or decay factor.
 - `dayup`: The result of compounding growth over 365 days.
 - `daydown`: The result of compounding decay over 365 days.

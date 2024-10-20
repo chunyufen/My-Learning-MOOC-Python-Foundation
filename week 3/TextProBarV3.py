@@ -1,6 +1,5 @@
 # week 3/TextProBarV3.py
-"""
-This script displays a progress bar that fills up over a specified duration, simulating a task in progress. It uses asterisks to represent completion and dots for the remaining part. The percentage of completion and the elapsed time are displayed in real-time.
+"""This script displays a progress bar that fills up over a specified duration, simulating a task in progress. It uses asterisks to represent completion and dots for the remaining part. The percentage of completion and the elapsed time are displayed in real-time.
 """
 import time
 scale = 50
